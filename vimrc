@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Rip-Rip/clang_complete'
+Bundle 'tpope/vim-unimpaired'
 
 colorscheme default
 
