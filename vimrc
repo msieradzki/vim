@@ -11,9 +11,21 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-unimpaired'
 
-colorscheme default
+"colorscheme default
+colorscheme zenburn
+
+if has('gui_running')
+	set guifont=Terminus\ 12
+	set guioptions-=m "menu bar
+	set guioptions-=T " toolbar
+	set guioptions-=r "right scrollbar
+	set guioptions-=L
+endif
+
+set hlsearch
 
 autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
@@ -28,3 +40,6 @@ nnoremap <S-F6> <C-W>W
 
 nnoremap <C-N> :next<CR>
 nnoremap <C-P> :prev<CR>
+
+" set grepprg=grep\ -nr\ --exclude\=tags\ $*
+" set grepprg=grep\ -nr\ --exclude\=tags\ $*\ /dev/null
