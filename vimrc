@@ -1,6 +1,5 @@
-runtime bundle/autoload/pathogen.vim
-
-call pathogen#infect()
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -11,6 +10,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'mileszs/ack.vim'
+
+filetype on
 
 "colorscheme default
 colorscheme zenburn
