@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+"filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -11,10 +11,13 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'mileszs/ack.vim'
 
-filetype on
+"filetype on
 
-"colorscheme default
-colorscheme zenburn
+
+let NERDTreeDirArrows = 0
+
+
+let g:zenburn_high_Contrast = 1
 
 if has('gui_running')
 	set guifont=Terminus\ 12
@@ -22,7 +25,12 @@ if has('gui_running')
 	set guioptions-=T " toolbar
 	set guioptions-=r "right scrollbar
 	set guioptions-=L
+else
+	set t_Co=256	
 endif
+
+"colorscheme default
+colorscheme zenburn
 
 set hlsearch
 
