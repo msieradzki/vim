@@ -10,6 +10,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'mileszs/ack.vim'
+Bundle 'maksimr/vim-jsbeautify'
 
 "filetype on
 
@@ -42,6 +43,8 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 " From Opera staffwiki/vim
 
 autocmd FileType make set noexpandtab shiftwidth=8
+
+map <c-f> :call JsBeautify()<cr>
 
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
