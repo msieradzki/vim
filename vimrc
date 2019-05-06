@@ -60,3 +60,10 @@ nnoremap <S-F6> <C-W>W
 nnoremap <C-N> :next<CR>
 nnoremap <C-P> :prev<CR>
 
+if executable("rg")
+    set grepprg=rg\ --vimgrep\ --no-heading
+    set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+
+let g:ackprg = 'rg --vimgrep --no-heading'
+
