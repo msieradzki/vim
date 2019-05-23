@@ -8,6 +8,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 
+Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+
 call plug#end()
 
 colorscheme koehler
