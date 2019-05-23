@@ -12,9 +12,9 @@ Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
 
 call plug#end()
 
-colorscheme koehler
+"colorscheme koehler
 "colorscheme default
-"colorscheme zenburn
+colorscheme zenburn
 
 let g:ctrlp_working_path_mode = 'a'
 
