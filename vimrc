@@ -8,12 +8,13 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 
-Plug 'neoclide/coc.nvim', {'do': './install.sh nightly'}
+Plug 'neoclide/coc.nvim' ", {'do': './install.sh nightly'}
 
 call plug#end()
 
 "colorscheme koehler
 "colorscheme default
+let g:zenburn_high_Contrast = 1
 colorscheme zenburn
 
 let g:ctrlp_working_path_mode = 'a'
@@ -26,16 +27,13 @@ set tabstop=2 softtabstop=2 expandtab shiftwidth=2
 "smarttab
 
 set guifont=Terminus\ 10
-"set guifont=Hack\ 10
 set nocompatible
-"filetype off
 
 "Bundle 'Rip-Rip/clang_complete'
 "Bundle 'maksimr/vim-jsbeautify'
 
 let NERDTreeDirArrows = 0
 
-let g:zenburn_high_Contrast = 1
 
 if has('gui_running')
 	set guifont=Terminus\ 12
@@ -69,3 +67,6 @@ endif
 
 let g:ackprg = 'rg --vimgrep --no-heading'
 
+" neoclide/coc:
+set updatetime=300
+set shortmess+=c
