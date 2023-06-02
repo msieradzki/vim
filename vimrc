@@ -3,12 +3,20 @@ Plug 'tpope/vim-sensible'
 Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
+", { 'on': 'NERDTreeToggle' }
+Plug 'jnurmine/Zenburn'
+
+Plug 'altercation/vim-colors-solarized'
+Plug 'ayu-theme/ayu-vim'
+Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
 
-Plug 'neoclide/coc.nvim' ", {'do': './install.sh nightly'}
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+
+Plug 'maksimr/vim-jsbeautify'
 
 call plug#end()
 
@@ -47,6 +55,12 @@ endif
 
 "autocmd vimenter * if !argc() | NERDTree | endif
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" last used in nvim
+"augroup nerdtree_open
+"    autocmd!
+"    autocmd VimEnter * NERDTree | wincmd p
+"augroup END
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
