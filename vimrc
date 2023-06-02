@@ -20,12 +20,14 @@ Plug 'maksimr/vim-jsbeautify'
 
 call plug#end()
 
-"colorscheme koehler
-"colorscheme default
-let g:zenburn_high_Contrast = 1
-colorscheme zenburn
+set background=dark
+let ayucolor="light"
+"colorscheme ayu
+colorscheme gruvbox
 
 let g:ctrlp_working_path_mode = 'a'
+
+set clipboard^=unnamed,unnamedplus
 
 " END OF NEW
 
