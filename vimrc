@@ -34,7 +34,7 @@ colorscheme gruvbox
 
 let g:ctrlp_working_path_mode = 'a'
 
-set clipboard^=unnamed,unnamedplus
+"set clipboard^=unnamed,unnamedplus
 
 " END OF NEW
 
