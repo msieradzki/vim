@@ -39,6 +39,7 @@ let g:ctrlp_working_path_mode = 'a'
 
 " END OF NEW
 
+set smartcase
 set hlsearch
 set tabstop=2 softtabstop=2 expandtab shiftwidth=2
 "autocmd FileType make set noexpandtab shiftwidth=8
