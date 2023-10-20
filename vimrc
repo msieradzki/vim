@@ -44,7 +44,6 @@ set tabstop=2 softtabstop=2 expandtab shiftwidth=2
 "autocmd FileType make set noexpandtab shiftwidth=8
 "smarttab
 
-set guifont=Terminus\ 10
 set nocompatible
 
 "Bundle 'Rip-Rip/clang_complete'
@@ -54,7 +53,8 @@ let NERDTreeDirArrows = 0
 
 
 if has('gui_running')
-	set guifont=Terminus\ 12
+"set guifont=Terminus\ 10
+"	set guifont=Terminus\ 12
 	set guioptions-=m "menu bar
 	set guioptions-=T " toolbar
 	set guioptions-=r "right scrollbar
