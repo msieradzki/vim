@@ -13,6 +13,7 @@ Plug 'morhetz/gruvbox'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-commentary'
 
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
