@@ -28,7 +28,7 @@ set t_Co=256
 set encoding=utf8
 set termguicolors
 
-set background=dark
+set background=light
 let ayucolor="light"
 "colorscheme ayu
 colorscheme gruvbox
