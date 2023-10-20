@@ -50,7 +50,7 @@ set nocompatible
 "Bundle 'maksimr/vim-jsbeautify'
 
 let NERDTreeDirArrows = 0
-
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 if has('gui_running')
 "set guifont=Terminus\ 10
@@ -65,6 +65,14 @@ endif
 
 "autocmd vimenter * if !argc() | NERDTree | endif
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Start NERDTree and put the cursor back in the other window.
+"autocmd VimEnter * NERDTree | wincmd p
+
+" Start NERDTree when Vim is started without file arguments.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
 
 " last used in nvim
 "augroup nerdtree_open
